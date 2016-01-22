@@ -3,3 +3,11 @@
 	-moz-appearance: none;
 	appearance: none;
 }
+
+@mixin transitions($value) {
+	-webkit-transition: $value;
+	-moz-transition: $value;
+	-ms-transition: $value;
+	-o-transition: $value;
+	transition: $value;
+}

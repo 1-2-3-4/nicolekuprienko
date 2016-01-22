@@ -8,9 +8,10 @@
    Base styles: opinionated defaults
    ========================================================================== */
 html {
-  color: #343434;
+  color: #5f5f5f;
   font-size: 1em;
-  line-height: 1.4; }
+  line-height: 1.4;
+  font-family: Arial; }
 
 /*
  * Remove text-shadow in selection highlight:
@@ -79,17 +80,24 @@ textarea {
    ========================================================================== */
 /* Mixins */
 /* Main Layout styling */
+body {
+  overflow-x: hidden; }
+
 .main {
   width: 85%;
   margin: 0 auto;
   max-width: 1200px;
-  padding-top: 100px; }
+  padding-top: 75px; }
+
+.fun .main,
+.contact .main {
+  width: 60%; }
 
 footer {
-  width: 100%;
   background-color: #343434;
   padding: 50px 12.5%;
-  color: cyan; }
+  color: #D6D6D6;
+  text-align: center; }
   footer ul {
     margin: 0;
     padding: 0; }
@@ -98,37 +106,76 @@ footer {
       margin: 0;
       display: inline-block; }
       footer ul li a {
-        color: cyan;
+        color: #A7B2E6;
         margin-right: 15px;
         font-size: 2em; }
+      footer ul li a:hover {
+        color: #fff; }
 
 /* Carousel styling */
 .slider {
-  border: 5px solid #343434;
-  text-align: center;
-  position: relative; }
+  position: relative;
+  display: block;
+  min-height: 450px;
+  overflow: hidden; }
 
 .slide {
   text-align: center;
-  padding: 50px; }
+  padding: 50px;
+  position: absolute;
+  background-color: #ccc;
+  width: calc(100% - 100px);
+  display: none;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.slide.active {
+  display: block;
+  z-index: 3;
+  left: 0; }
+
+.slide.prev {
+  display: block;
+  z-index: 2;
+  left: 0; }
+
+.slide.next {
+  display: block;
+  z-index: 2;
+  left: 100%; }
+
+.slide2 {
+  background-color: pink; }
+
+.slide3 {
+  background-color: yellow; }
+
+.slide4 {
+  background-color: purple; }
 
 #prev, #next {
   position: absolute;
   top: 50%;
-  margin-top: -20px;
+  margin-top: -22px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   border: 0;
-  background-color: #343434;
-  color: #f9f9f9;
-  padding: 10px; }
+  background-color: transparent;
+  color: #5f5f5f;
+  padding: 0;
+  font-size: 2em;
+  z-index: 4; }
 
 #prev {
-  left: 0; }
+  left: 10px; }
 
 #next {
-  right: 0; }
+  right: 10px; }
 
 h1 {
   margin-top: 0; }
@@ -150,11 +197,35 @@ nav {
 .project {
   margin-bottom: 100px; }
 
+/* all project imgs */
+.proj-holiday-landing-pg {
+  background: url("../img/holiday-landing-pg.png"); }
+
+.proj-hoot-art {
+  background: url("../img/hootart.png"); }
+
+.proj-formtool {
+  background: url("../img/form-tool.png"); }
+
+.proj-championships {
+  background: url("../img/20ss-championship.png"); }
+
+.proj-email-popup {
+  background: url("../img/email-popup.png"); }
+
+.proj-templates {
+  background: url("../img/landing-pg-template.png"); }
+
 .proj-img-container {
   background-color: #ccc;
   display: inline-block;
   width: 70%;
-  float: left; }
+  float: left;
+  border: solid 4px;
+  background-size: cover;
+  height: 500px;
+  -webkit-filter: grayscale(25%);
+  filter: grayscale(25%); }
   .proj-img-container img {
     width: 100%;
     min-height: 550px; }
@@ -180,11 +251,25 @@ span.tag {
   display: block;
   width: 100%;
   margin-bottom: 20px;
-  background-color: #ccc;
   text-align: center;
   text-decoration: none;
   padding: 10px 0;
-  border-radius: 6px; }
+  border-radius: 6px;
+  background: linear-gradient(#C0CBFF, #929DD4);
+  box-shadow: inset 1px 2px 2px #DEE2F3,  inset -2px -2px 2px #8A8FAD;
+  color: white;
+  text-shadow: -1px -1px 1px #707EC7;
+  letter-spacing: 1px; }
+
+/* Fun Page styling */
+.fun-section {
+  margin-bottom: 100px;
+  text-align: center; }
+
+.fun-container {
+  width: 100%;
+  min-height: 600px;
+  background: #ccc; }
 
 /* ==========================================================================
    Helper classes

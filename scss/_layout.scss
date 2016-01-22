@@ -1,15 +1,24 @@
+body {
+	overflow-x: hidden;
+}
+
 .main {
 	width: 85%;
 	margin: 0 auto;
 	max-width: 1200px;
-	padding-top: 100px;
+	padding-top: 75px;
+}
+
+.fun .main,
+.contact .main {
+	width: 60%;
 }
 
 footer {
-	width: 100%;
 	background-color: #343434;
 	padding: 50px 12.5%;
-	color: cyan;
+	color: #D6D6D6;
+	text-align: center;
 	ul {
 		margin: 0;
 		padding: 0;
@@ -18,9 +27,12 @@ footer {
 			margin: 0;
 			display: inline-block;
 			a {
-				color: cyan;
+				color: #A7B2E6;
 				margin-right: 15px;
 				font-size: 2em;
+			}
+			a:hover {
+				color: #fff;
 			}
 		}
 	}

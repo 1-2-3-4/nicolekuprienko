@@ -2,11 +2,42 @@
 	margin-bottom: 100px;
 }
 
+/* all project imgs */
+
+.proj-holiday-landing-pg {
+	background: url('../img/holiday-landing-pg.png');
+}
+
+.proj-hoot-art {
+	background: url('../img/hootart.png');
+}
+
+.proj-formtool {
+	background: url('../img/form-tool.png');
+}
+
+.proj-championships {
+	background: url('../img/20ss-championship.png');
+}
+
+.proj-email-popup {
+	background: url('../img/email-popup.png');
+}
+
+.proj-templates {
+	background: url('../img/landing-pg-template.png');
+}
+
 .proj-img-container {
 	background-color: #ccc;
 	display: inline-block;
 	width: 70%;
 	float: left;
+	border: solid 4px;
+	background-size: cover;
+	height: 500px;
+	-webkit-filter: grayscale(25%);
+            filter: grayscale(25%);
 	img {
 		width: 100%;
 		min-height: 550px;
@@ -36,9 +67,16 @@ span.tag {
 	display: block;
 	width: 100%;
 	margin-bottom: 20px;
-	background-color: #ccc;
 	text-align: center;
 	text-decoration: none;
 	padding: 10px 0;
 	border-radius: 6px;
+	background: linear-gradient(#C0CBFF, #929DD4);
+	box-shadow: 
+		inset 1px 2px 2px #DEE2F3, 
+		inset -2px -2px 2px #8A8FAD;
+	color: rgb(255,255,255);
+	text-shadow: -1px -1px 1px #707EC7;
+	letter-spacing: 1px; 
+	
 }
