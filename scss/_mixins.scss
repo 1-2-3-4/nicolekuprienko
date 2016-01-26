@@ -11,3 +11,10 @@
 	-o-transition: $value;
 	transition: $value;
 }
+
+@mixin animations($name) {
+	-webkit-animation: $name;
+	-moz-animation: $name;
+	-o-animation: $name;
+	animation: $name;
+}

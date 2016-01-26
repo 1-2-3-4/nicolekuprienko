@@ -2,11 +2,19 @@ body {
 	overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'overpass-bold', Arial, sans-serif;
+}
+
 .main {
 	width: 85%;
 	margin: 0 auto;
 	max-width: 1200px;
-	padding-top: 75px;
+	padding-top: 50px;
+}
+
+section p {
+	font-family: Arial, sans-serif;
 }
 
 .fun .main,

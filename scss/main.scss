@@ -14,7 +14,7 @@ html {
     color: #5f5f5f;
     font-size: 1em;
     line-height: 1.4;
-    font-family: Arial;
+    font-family: 'overpass-regular', Arial, sans-serif;
 }
 
 /*
@@ -96,6 +96,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* Fonts */
+@import 'fonts';
+
 /* Mixins */
 @import 'mixins';
 
@@ -114,7 +117,11 @@ textarea {
 /* Fun Page styling */
 @import 'fun';
 
+/* Contact Page - animations */
+@import 'contact-ani';
 
+/* Contact Page styling */
+@import 'contact';
 
 
 

@@ -1,9 +1,9 @@
         <footer>
             <p>&copy; Nicole Kuprienko 2016</p>
             <ul>
-                <li><a href="#"><i class="fa fa-codepen"></i></a></li>
-                <li><a href="#"><i class="fa fa-github"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="http://codepen.io/nicode/" target="_blank"><i class="fa fa-codepen"></i></a></li>
+                <li><a href="https://github.com/1-2-3-4" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/nicole-kuprienko-3954b760" target="_blank"><i class="fa fa-linkedin"></i></a></li>
             </ul>
         </footer>
 
@@ -11,7 +11,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/orange-test.js"></script>
+        <!--<script src="js/orange-test.js"></script>-->
 
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

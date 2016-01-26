@@ -36,8 +36,8 @@
 	border: solid 4px;
 	background-size: cover;
 	height: 500px;
-	-webkit-filter: grayscale(25%);
-            filter: grayscale(25%);
+	-webkit-filter: grayscale(75%);
+            filter: grayscale(75%);
 	img {
 		width: 100%;
 		min-height: 550px;
@@ -78,5 +78,14 @@ span.tag {
 	color: rgb(255,255,255);
 	text-shadow: -1px -1px 1px #707EC7;
 	letter-spacing: 1px; 
+	@include transitions(background 0.3s);
 	
+}
+
+.view-proj:hover {
+	background: linear-gradient(#F9A8A8, #fc7777);
+	box-shadow: 
+		inset 1px 2px 2px #ECC6C6, 
+		inset -2px -2px 2px #926464;
+	text-shadow: -1px -1px 1px #926161;
 }
