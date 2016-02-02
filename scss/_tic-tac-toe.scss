@@ -1,0 +1,75 @@
+#ttt-wrapper {
+	color: #5f5f5f;
+	font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+	// max-width: 600px;
+	// padding: 25px 50px;
+	background-color: #F1F1F1;
+	text-align: center;
+	border: solid 5px;
+	h1 {
+		margin: 0 auto;
+		text-shadow: 1px 1px 1px #BCDEFB;
+	}
+	.box-wrapper {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+	.box {
+		display: inline-block;
+		background-color: #5f5f5f;
+		margin-bottom: 25px;
+		margin-right: 25px;
+		position: relative;
+		border-radius: 8px;
+		height: 150px;
+		width: 150px;
+		@include transitions(all 0.5s);
+		span {
+			position: absolute;
+			font-size: 100px;
+			line-height: 145px;
+			top: 0;
+			left: 0;
+			text-shadow: 3px -6px 0px #3F3E3E, 2px -4px 0px #3F3E3E, 1px -2px 0px #3F3E3E;
+		}
+		span.computer {
+			margin-left: 35px;
+			color: #BCDEFB;
+		}
+		span.player {
+			margin-left: 42px;
+			color: #FFDE90;
+		}
+	}
+	.box:nth-child(3),
+	.box:nth-child(6),
+	.box:nth-child(9) {
+		margin-right: 0;
+	}
+	p {
+		background-color: #5f5f5f;
+		padding: 12px 20px;
+		border-radius: 8px;
+		color: #f9f9f9;
+		font-size: 0.9em;
+		margin: 20px auto;
+		letter-spacing: 1px;
+		width: 125px;
+		display: inline-block;
+	}
+	.player-num-wins {
+		color: #FFDE90;
+	}
+	.computer-num-wins {
+		color: #BCDEFB;
+	}
+	.open:hover {
+		cursor: pointer;
+	}
+	.hide {
+		display: none;
+	}
+	.permanent {
+		display: block;
+	}
+}

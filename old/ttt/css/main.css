@@ -1,0 +1,79 @@
+/* GLOBAL STYLING */
+
+body {
+	background: #FFF8DC;
+}
+
+div#wrapper {
+	width: 660px;
+	margin: auto;
+	height: 660px;
+}
+
+.clear {
+	clear: both;
+}
+
+/* HEADING STYLES */
+
+img#title {
+    margin: 0 0 0 50px;
+}
+
+body h2 {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 26px;
+	color: #9999ff;
+	text-align: center;
+	margin: auto;
+	height: 40px;
+	width: 600px;
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+
+/* BOX STYLES */
+
+body div.square {
+	height: 150px;
+	width: 150px;
+	background-color: beige;
+	margin: 12px;
+	border: solid grey 3px;
+	float: left;
+	cursor: auto;
+}
+
+body div.row {
+	padding-left: 50px;
+}
+
+
+/* X AND O STYLE */
+
+div span {
+	font-family: "Helvetica", sans-serif;
+	font-size: 100px;
+	color: grey;
+	height: 150px;
+	width: 100px;
+	line-height: 150px;
+	margin: 0 12px 0 38px;
+	display: none;
+}
+
+/* WINNER BOX STYLE */
+
+div#winner_annoucement {
+	background-color: grey;
+	height: 516px;
+	width: 516px;
+	position: absolute;
+	z-index: 14;
+	margin: 32px 0 0 59px;
+	top: 137px;
+	opacity: 0.5;
+	display: none;
+}
+
+

@@ -15,6 +15,7 @@ html {
     font-size: 1em;
     line-height: 1.4;
     font-family: 'overpass-regular', Arial, sans-serif;
+    background-color: #F5F3EC;
 }
 
 /*
@@ -114,8 +115,17 @@ textarea {
 /* Project Block styling */
 @import 'projects';
 
+/* Button styling */
+@import 'buttons';
+
 /* Fun Page styling */
 @import 'fun';
+
+/* Guessing Game styling */
+@import 'guessing-game';
+
+/* Tic Tac Toe styling */
+@import 'tic-tac-toe';
 
 /* Contact Page - animations */
 @import 'contact-ani';
@@ -123,8 +133,8 @@ textarea {
 /* Contact Page styling */
 @import 'contact';
 
-
-
+/* Media Query styling */
+@import 'media-query';
 
 /* ==========================================================================
    Helper classes

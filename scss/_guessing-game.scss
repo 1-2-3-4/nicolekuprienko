@@ -1,0 +1,128 @@
+/* nesting all styles within div in order to easily embed on page */
+
+#guessing-container{
+	position: relative;
+	width: 100%;
+	padding-bottom: 57px;
+	font-family: 'Lucida Sans', Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	#guessing-text {
+		overflow-y: scroll;
+		height: 300px;
+		background-color: #F1F1F1;
+		padding: 10px;
+		border: solid 5px;
+		border-bottom: 0;
+	}
+	#guessing-inner {
+		height: 301px;
+		// height: calc(100% + 1px);
+		// display: -webkit-box;
+		// display: -moz-box;
+		// display: -webkit-flex;
+		// display: -ms-flexbox;
+		// display: flex;
+		// -webkit-box-orient: vertical;
+		// -webkit-box-direction: normal;
+		// -webkit-flex-direction: column;
+		//    -moz-flex-direction: column;
+		//     -ms-flex-direction: column;
+		//         flex-direction: column;
+	}
+	span {
+		display: inline-block;
+		color: #5a5a5a;
+		padding: 8px 15px;
+		border-radius: 20px;
+		margin-bottom: 15px;
+		position: relative;
+	}
+	#userGuess {
+		height: 50px;
+		position: absolute;
+		bottom: 0;
+		border: 0;
+		left: 0;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		-o-appearance: none;
+		appearance: none;
+		border-bottom: #61F1C9 solid 5px;
+		width: 100%;
+		width: calc(100% - 2px);
+		font-size: 1.1em;
+		background-color: #444;
+		text-indent: 15px;
+		color: #DEDEDE;
+		letter-spacing: 1px;
+		outline: none;
+	}
+	.computerTxt-container {
+		// -webkit-align-self: flex-start;
+		//     -ms-flex-item-align: start;
+		//         align-self: flex-start;
+		display: block;
+		i {
+			background-color: #5a5a5a;
+			color: #ececec;
+			padding: 10px;
+			border-radius: 50%;
+			font-size: 1.1em;
+		}
+	}
+	.computerTxt {
+		//#ececec
+		background-color: #FFDE90;
+		text-align: left;
+		margin-left: 20px;
+	}
+	.computerTxt.new-color {
+		background-color: #BCDEFB;
+	}
+	.computerTxt::before {
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 0;
+		left: -10px;
+		border: 9px solid;
+		border-color: transparent transparent #FFDE90;
+	}
+	.computerTxt.new-color::before {
+		border-color: transparent transparent #BCDEFB;
+	}
+	.userTxt-container {
+		text-align: right;
+		// -webkit-align-self: flex-end;
+		//     -ms-flex-item-align: end;
+		//         align-self: flex-end;
+		i {
+			padding: 10px 12px;
+			border-radius: 50%;
+			font-size: 1.1em;
+			margin-right: 5px;
+			background-color: #5a5a5a;
+			color: #ececec;
+		}
+	}
+	.userTxt {
+		background-color: #61F1C9;
+		text-align: right;
+		margin-right: 20px;
+	}
+	.userTxt::after {
+		content: '';
+		position: absolute;
+		width: 0;
+		height: 0;
+		right: -9px;
+		border: 9px solid;
+		border-color: transparent transparent #61F1C9;
+	}
+	input[type=number]::-webkit-inner-spin-button, 
+	input[type=number]::-webkit-outer-spin-button { 
+	  -webkit-appearance: none; 
+	  margin: 0; 
+	}
+}

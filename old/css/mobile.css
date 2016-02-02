@@ -1,0 +1,124 @@
+/* GLOBAL STYLING */
+
+body {
+	background: #FFF8DC;
+}
+
+div#wrapper {
+	background: url('../images/nk_logo.png') no-repeat left top;
+	width: 480px;
+	height: 950px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+div.clearfix {
+	clear: both;
+}
+
+* {
+	font-family: 'Helvetica-Neue', 'Helvetica', sans-serif;
+}
+
+/* HEADER STYLING */
+
+img#webdev {
+	margin: 100px 0 0 0px;
+	width: 245px;
+}
+
+/* NAV STYLING */
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+ nav ul li a {
+ 	padding: 0;
+	margin: 0;
+	float: left;
+ }
+
+    nav ul li a img {
+  		height: 36px;
+		float: left;
+		margin: 0 7px 0 0;
+    }
+
+     nav ul li a img:hover {
+	 	opacity: 0.5;
+     }
+
+/* BUTTON STYLING FOR WORK PAGE */
+
+img.button {
+	margin: 23px 23px 0 0;
+	width: 210px;
+	height: 210px;
+}
+
+/* ABOUT PAGE STYLING */
+
+section#about_section, section#contact_section {
+	margin-top: 23px;
+}
+
+section#about_section img#me, section#contact_section img#email {
+	margin: 0 0 0 100px;
+    height: 225px;
+    width: 225px;
+}
+
+section#about_section p {
+	font-size: 24px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-weight: normal;
+	color: black;
+	text-align: left;
+	height: 195px;
+	width: 480px;
+	margin: 15px 0 0 10px;
+	padding: 0;
+}
+
+section#contact_section p {
+    font-size: 24px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-weight: normal;
+	color: black;
+	text-align: left;
+	height: 100px;
+	width: 480px;
+	margin: 15px 0 0 10px;
+	padding: 0;
+}
+
+section#about_section p span {
+	color: #9999ff;
+	font-size: 24px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-weight: normal;
+}
+
+section#contact_section p span {
+	color: #ff99cc;
+	font-size: 24px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-weight: normal;
+}
+
+section#about_section img#skills {
+	margin: 0 auto;
+	width: 480px;
+}
+
+
+/* FOOTER STYLING */
+
+footer p {
+	opacity: 0.5;
+	margin-top: 40px;
+	font-size: 12px;
+}

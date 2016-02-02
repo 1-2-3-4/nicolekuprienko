@@ -1,63 +1,36 @@
-@-webkit-keyframes colorChange {
-	0% {background-color: #A9B4E9;}
-	25% {background-color: #82E8BF;}
-	50% {background-color: #E8D377;}
-	75% {background-color: #CBA3EF;}
-	100% {background-color: #A9B4E9;}
-}
+$firstAnimationColor: #A9B4E9;
+$secondAnimationColor: #82E8BF;
+$thirdAnimationColor: #E8D377;
+$fourthAnimationColor: #CBA3EF;
 
-@-webkit-keyframes colorChangeText {
-	0% {color: #A9B4E9;}
-	25% {color: #82E8BF;}
-	50% {color: #E8D377;}
-	75% {color: #CBA3EF;}
-	100% {color: #A9B4E9;}
+@-webkit-keyframes colorChange {
+	0% {background-color: $firstAnimationColor;}
+	25% {background-color: $secondAnimationColor;}
+	50% {background-color: $thirdAnimationColor;}
+	75% {background-color: $fourthAnimationColor;}
+	100% {background-color: $firstAnimationColor;}
 }
 
 @-moz-keyframes colorChange {
-	0% {background-color: #A9B4E9;}
-	25% {background-color: #82E8BF;}
-	50% {background-color: #E8D377;}
-	75% {background-color: #CBA3EF;}
-	100% {background-color: #A9B4E9;}
-}
-
-@-moz-keyframes colorChangeText {
-	0% {color: #A9B4E9;}
-	25% {color: #82E8BF;}
-	50% {color: #E8D377;}
-	75% {color: #CBA3EF;}
-	100% {color: #A9B4E9;}
+	0% {background-color: $firstAnimationColor;}
+	25% {background-color: $secondAnimationColor;}
+	50% {background-color: $thirdAnimationColor;}
+	75% {background-color: $fourthAnimationColor;}
+	100% {background-color: $firstAnimationColor;}
 }
 
 @-o-keyframes colorChange {
-	0% {background-color: #A9B4E9;}
-	25% {background-color: #82E8BF;}
-	50% {background-color: #E8D377;}
-	75% {background-color: #CBA3EF;}
-	100% {background-color: #A9B4E9;}
-}
-
-@-o-keyframes colorChangeText {
-	0% {color: #A9B4E9;}
-	25% {color: #82E8BF;}
-	50% {color: #E8D377;}
-	75% {color: #CBA3EF;}
-	100% {color: #A9B4E9;}
+	0% {background-color: $firstAnimationColor;}
+	25% {background-color: $secondAnimationColor;}
+	50% {background-color: $thirdAnimationColor;}
+	75% {background-color: $fourthAnimationColor;}
+	100% {background-color: $firstAnimationColor;}
 }
 
 @keyframes colorChange {
-	0% {background-color: #A9B4E9;}
-	25% {background-color: #82E8BF;}
-	50% {background-color: #E8D377;}
-	75% {background-color: #CBA3EF;}
-	100% {background-color: #A9B4E9;}
-}
-
-@keyframes colorChangeText {
-	0% {color: #A9B4E9;}
-	25% {color: #82E8BF;}
-	50% {color: #E8D377;}
-	75% {color: #CBA3EF;}
-	100% {color: #A9B4E9;}
+	0% {background-color: $firstAnimationColor;}
+	25% {background-color: $secondAnimationColor;}
+	50% {background-color: $thirdAnimationColor;}
+	75% {background-color: $fourthAnimationColor;}
+	100% {background-color: $firstAnimationColor;}
 }

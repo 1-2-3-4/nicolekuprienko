@@ -1,0 +1,180 @@
+/* GLOBAL STYLES */
+
+div#wrapper {
+	height: 850px;
+	width: 1300px;
+	background: url('../images/map_bg.png') no-repeat center;
+	margin: 0;
+	padding: none;
+}
+
+div.clearfix {
+	clear: both;
+}
+
+/* HEADER STYLES */
+
+img {
+	margin: 20px 0 0 55px;
+	float: left;
+}
+
+header div#header_wrap {
+	float: left;
+	border-bottom: 2px solid black;
+	width: 990px;
+	height: 148px;
+	margin-left: 15px;
+}
+
+header h1{
+	font-family: Georgia, serif;
+	font-weight: bold;
+	color: black;
+	font-size: 40px;
+	margin: 50px 0 0 0;
+	padding: 15px 0 0 20px;
+	text-align: left;
+	height: 67px;
+	width: 600px;
+	float: left;
+}
+
+ header h1 span {
+ 	font-size: 57px;
+ }
+
+ header p {
+ 	color: black;
+ 	font-size: 14px;
+ 	font-weight: normal;
+ 	font-family: Helvetica, sans-serif;
+ 	float: left;
+ 	margin: 105px 0 0 155px;
+ }
+
+/* NAVIGATION STYLES FONTS/LINKS */
+
+nav {
+	float: left;
+	margin-top: 40px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a div {
+	padding: 0;
+	margin: 0;
+	height: 66px;
+	width: 288px;
+    text-align: center;
+    line-height: 20px;
+}
+
+ nav a div p {
+ 	color: white;
+ 	height: 66px;
+	width: 288px;
+	line-height: 45px;
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 0;
+ }
+
+  nav a div p span.text_14 {
+  	font-size: 14px;
+  }
+
+  nav a div p span.text_16 {
+  	font-size: 16px;
+  }  
+
+/*NAVIGATION STYLES BG IMG FOR BUTTONS */
+
+nav div.orange {
+	background: url('../images/sprite.png');
+	background-position: 0px 0px;
+}
+
+nav div.rust {
+	background: url('../images/sprite.png');
+	background-position: 0px -66px;
+}
+
+nav div.blue {
+	background: url('../images/sprite.png');
+	background-position: 0px -134px;
+}
+
+nav div.orange:hover, nav div.orange.hot {
+	background: url('../images/sprite.png');
+	background-position: 0px -202px;
+	opacity: 0.9;
+}
+
+nav div.rust:hover, nav div.rust.hot {
+	background: url('../images/sprite.png');
+	background-position: 0px -273px;
+	opacity: 0.9;
+}
+
+nav div.blue:hover, nav div.blue.hot {
+	background: url('../images/sprite.png');
+	background-position: 0px -343px;
+	opacity: 0.9;
+}
+
+/* CONTENT STYLES */
+
+section.content {
+	float: left;
+	margin: 0 20px 0 20px;
+}
+
+	section.content div#content_text {
+		background-color: #d2d2d2;
+		padding: 20px;
+		color: black;
+		font-family: Helvetica, sans-serif;
+		font-size: 14px;
+		width: 615px;
+		height: 540px;
+		opacity: 0.7;
+		box-shadow: inset 0 0 7px 4px rgba(255,255,255,.5)
+	}
+
+	section.content div#content_text span {
+		font-size: 20px;
+	}
+
+	section.content div#content_text p {
+		margin: 0;
+	}
+
+section#twitter_rail {
+	float: left;
+}
+
+/* GAMES WE OFFER STYLING */
+
+p#left_text {
+    float: left;
+}
+
+div#content_text p#right_text {
+    float: left;
+    margin: 0 0 0 40px;
+}
+
+/* FOOTER STYLES */
+
+footer p, footer p a {
+	font-family: Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	margin-left: 5px;
+	color: #d2d2d2;
+}

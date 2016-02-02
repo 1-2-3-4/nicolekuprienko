@@ -1,0 +1,62 @@
+/* GLOBAL STYLING */
+
+.wrapper {
+	padding: 5%;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/* CALENDAR STYLING */
+
+.calendar-chevron {
+	display: block;
+	float: left;
+	line-height: 42px;
+	color: #4f9eae;	
+	width: 5%;
+}
+
+.month-label {
+	text-transform: uppercase;
+	font-size: 40px;
+	line-height: 42px;
+	text-align: center;
+	display: block;
+	float: left;
+	width: 90%;
+}
+
+.weekday-row {
+	border: 0 !important;
+	border-color: transparent;
+	height: 50px;
+}
+
+ .weekday-row th {
+ 	text-align: center;
+ 	color: #595B5B;
+ 	border: 0 !important;
+ 	border-color: transparent;
+ 	line-height: 50px;
+ 	width: 14%;
+ }
+
+ .calendar-noborder {
+ 	border: 0 !important;
+ }
+
+ .calendar-row {
+ 	height: 150px;
+ }
+
+ .calendar-row td {
+ 	width: 14%;
+ }
+
+ .past {
+ 	color: #ABABAB;
+ 	background-color: #F7F7F7;
+ }
+

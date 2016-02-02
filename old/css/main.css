@@ -1,0 +1,129 @@
+/* GLOBAL STYLING */
+
+body {
+	background: #FFF8DC;
+}
+
+div#wrapper {
+	background: url('../images/nk_logo.png') no-repeat left top;
+	width: 825px;
+	height: 750px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+div.clearfix {
+	clear: both;
+}
+
+* {
+	font-family: 'Helvetica-Neue', 'Helvetica', sans-serif;
+}
+
+/* HEADER STYLING */
+
+/*img#nk_logo {
+	margin: 0;
+	float: left;
+}*/
+
+img#webdev {
+	margin: 0;
+	float:left;
+	margin: 38px 0 0 450px;
+}
+
+/* NAV STYLING */
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 0 415px;
+}
+
+ nav ul li a {
+ 	padding: 0;
+	margin: 0;
+ }
+
+    nav ul li a img {
+  		height: 36px;
+		float: left;
+		margin: 0 7px 0 0;
+    }
+
+     nav ul li a img:hover {
+	 	opacity: 0.5;
+     }
+
+/* BUTTON STYLING FOR WORK PAGE */
+
+img.button {
+	float: left;
+	margin: 23px 0 0 23px;
+}
+
+/* ABOUT PAGE AND CONTACT PAGE STYLING */
+
+section#about_section, section#contact_section {
+	height: 472px;
+	margin-top: 23px;
+}
+
+section#about_section img#me, section#contact_section img#email {
+	margin: 15px 0 0 0;
+	float: left;
+}
+
+section#about_section p {
+	font-size: 24px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-weight: normal;
+	color: black;
+	text-align: left;
+	height: 206px;
+	width: 480px;
+	margin: 38px 0 0 19px;
+	padding: 5px;
+	float: left;
+}
+
+section#contact_section p {
+	font-size: 24px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-weight: normal;
+	color: black;
+	text-align: left;
+	height: 176px;
+	width: 390px;
+	margin: 68px 30px 0 79px;
+	padding: 5px;
+	float: left;
+}
+
+section#about_section p span {
+	color: #9999ff;
+    font-size: 24px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-weight: normal;
+}
+
+section#contact_section p span {
+	color: #ff99cc;
+    font-size: 24px;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-weight: normal;
+}
+
+section#about_section img#skills {
+	margin: 7px 0 0 150px;
+}
+
+
+/* FOOTER STYLING */
+
+footer p {
+	opacity: 0.5;
+	margin-top: 60px;
+	font-size: 14px;
+}

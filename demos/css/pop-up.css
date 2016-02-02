@@ -1,0 +1,437 @@
+/* CSS FOR POP-UP MODAL */
+
+/* BACKGROUND FOR FAKING THE MAC SITE - CAN BE DISCARDED */ 
+html {
+	background: url('../img/bg-envelopes.png') center no-repeat;
+	background-size: cover;
+}
+body {
+	display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	min-height: 100vh;
+}
+/* GENERIC STYLING - APPLIES REGARDLESS OF EMAIL LIST */
+/* GENERIC STYLING - HELPERS */
+.clearfix {
+	clear: both;
+}
+.hidden {
+	visibility: hidden;
+}
+.display-none {
+	display: none !important;
+}
+/* GENERIC STYLING - STYLES */
+
+.pop-up {
+	width: 90%;
+	background-color: #f6f3ed;
+	margin: auto;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+	font-family: "Georgia", "Arial Narrow", Arial;
+	color: #5A5A5A;
+	position: relative;
+	display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	transition: width 0.3s;
+	-webkit-transition: width 0.3s;
+}
+
+.pop-up {
+	width: 100%;
+	padding: 4% 0;
+	background-color: #f6f3ed;
+	font-family: "Georgia", "Arial Narrow", Arial;
+	color: #5A5A5A;
+	position: relative;
+	display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	transition: width 0.3s;
+	-webkit-transition: width 0.3s;	
+	box-sizing: border-box;
+}
+
+.pop-up-close {
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	font-size: 1.2em;
+	padding: 5px 7px;
+	border-radius: 30px;
+	color: #F6F3ED;
+}
+
+.legalese a:hover,
+.pop-up a.no-thanks:hover,
+.pop-up #popup-submit:hover,
+.pop-up a.thankyou-close:hover,
+.pop-up #popup-submit.disabled {
+	opacity: 0.8;
+}
+.pop-up p,
+.pop-up span {
+	line-height: 1.7em;
+	font-size: 0.8em;
+}
+.pop-up h2 {
+	font-family: "PT Sans",Arial;
+	margin-top: 0;
+	font-weight: 400;
+	font-size: 1.2em;
+}
+.pop-up h2 span {
+	font-size: 0.8em;
+}
+.pop-up .img-container {
+	display: none;
+	background-color: #fff;
+	background-size: cover;
+	border: solid 2px #dadada;
+}
+.pop-up .newsletter-ex {
+	width: 100%;
+	border: solid 2px #dadada;
+}
+.pop-up .text-container {
+	width: 86%;
+	padding: 0 7%;
+}
+.pop-up.thank-you {
+     max-width: 600px; 
+ }
+.pop-up input,
+.pop-up select {
+	width: 100%;
+	padding: 6px 0;
+	border-radius: 0;
+	appearance: none;
+	-webkit-appearance: none;
+	border: 0;
+	text-indent: 6px;
+	font-family: "Georgia","Arial Narrow",Arial;
+	font-size: 0.8em;
+	line-height: 1.6em;
+	color: #D9CFD1;
+	background-color: #5F5656;
+	border: solid 1px #483F3F;
+}
+.pop-up #popup-submit,
+.pop-up a.thankyou-close {
+	color: #f9f9f9;
+	cursor: pointer;
+	border: 0;
+	border-radius: 20px;
+	width: 100%;
+	display: inline-block;
+	margin: 10px auto 15px auto;
+	font-family: "PT Sans";
+	padding: 5px 0;
+	text-indent: 0;
+	font-size: 0.9em;
+	text-decoration: none;
+}
+.pop-up a.thankyou-close {
+	padding: 7px 0;
+}
+.pop-up select {
+	margin-bottom: 0;
+}
+/* VENDOR SPECIFIC FOR FF */
+@-moz-document url-prefix() {
+    .pop-up select {
+    	padding: 8px 0;
+    	text-indent: 3px;
+    }
+}
+.pop-up label {
+	margin-top: 3px;
+	font-size: 0.5em;
+	display: block;
+	margin-bottom: 8px;
+	font-family: 'PT Sans';
+	font-weight: 700;
+	color: #5a5a5a;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.pop-up .birth-month {
+	float: left;
+	width: 60%;
+	padding-right: 5%;
+}
+.pop-up .birth-year {
+	float: left;
+	width: 35%;
+	margin: 0;
+	padding: 0;
+}
+.pop-up a.no-thanks {
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 15px;
+	width: 100%;
+	width: calc(100% - 4px);
+	padding: 6px 0;
+	font-family: 'PT Sans';
+	border-radius: 20px;
+	text-decoration: none;
+	font-size: 0.9em;
+}
+.pop-up span {
+	display: block;
+	font-size: 0.7em;
+}
+.legalese {
+	margin-bottom: 10px;
+}
+.pop-up .footer-links {
+	text-align: center;
+}
+.logo {
+	height: 20px;
+}
+/* ERROR STYLING */
+.error {
+	border-color: #c30000 !important;
+	background-color: #633D3D !important;
+}
+.error-label {
+	color: #c30000 !important;
+}
+
+/* SPINNER EFFECT STYLING */
+.submit-text {
+	display: inline-block;
+	padding: 3px 0;
+}
+.spinner {
+	display: inline-block;
+	margin-left: 5px;
+	text-rendering: optimizeLegibility;
+	-webkit-animation: spin 3s infinite linear;
+	-moz-animation: spin 3s infinite linear;
+	-ms-animation: spin 4s infinite linear;
+	-o-animation: spin 4s infinite linear;
+	animation: spin 4s infinite linear;
+}
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+	0% { -moz-transform: rotate(0deg); }
+	100% { -moz-transform: rotate(360deg); }
+}
+@-ms-keyframes spin {
+	0% { -ms-transform: rotate(0deg); }
+	100% { -ms-transform: rotate(360deg); }
+}
+@-o-keyframes spin {
+	0% { -o-transform: rotate(0deg); }
+	100% { -o-transform: rotate(360deg); }
+}
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+/* BRAND-SPECIFIC COLORS & STYLING FOR DIFFERENT EMAIL LISTS */
+
+/* HEROES AND HEARTBREAKERS */
+.heroes-heartbreakers.pop-up {
+	border: solid 8px #AA2137;
+}
+.heroes-heartbreakers .pop-up-close {
+	background-color: #3D94CD;
+}
+.heroes-heartbreakers.pop-up a {
+	color: #0094CD;
+}
+.heroes-heartbreakers.pop-up h2 {
+	color: #EB2F48;
+}
+.heroes-heartbreakers.pop-up h2 span {
+	color: #A92036;
+}
+.heroes-heartbreakers.pop-up #popup-submit,
+.heroes-heartbreakers.pop-up a.thankyou-close {
+	background-color: #EB2F48;
+	color: #f9f9f9;
+	text-align: center;
+}
+.heroes-heartbreakers.pop-up a.no-thanks {
+	color: #EB2F48;
+	border: solid 2px #EB2F48;
+}
+.heroes-heartbreakers.pop-up a.no-thanks:hover {
+	color: rgba(235,47,72,0.8);
+	border-color: rgba(235,47,72,0.8);
+}
+/* FSG - WORK IN PROGRESS */
+.fsg-wip.pop-up {
+	border: solid 8px #48698C;
+}
+.fsg-wip .pop-up-close {
+	background-color: #57CC7A;
+}
+.fsg-wip.pop-up a {
+	color: #48698C;
+}
+.fsg-wip.pop-up h2 {
+	color: #48698C;
+}
+.fsg-wip.pop-up h2 span {
+	color: #555;
+}
+.fsg-wip.pop-up #popup-submit,
+.fsg-wip.pop-up a.thankyou-close {
+	background-color: #57CC7A;
+	color: #f9f9f9;
+	text-align: center;
+}
+.fsg-wip.pop-up a.no-thanks {
+	color: #57CC7A;
+	border: solid 2px #57CC7A;
+}
+.fsg-wip.pop-up a.no-thanks:hover {
+	color: rgba(87,204,122,0.8);
+	border-color: rgba(87,204,122,0.8);
+}
+.fsg-wip.pop-up label {
+	margin-bottom: 2px;
+}
+.fsg-wip .legalese {
+	margin-bottom: 0;
+}
+/* GRIFFIN TEEN */
+.griffin-teen.pop-up {
+	border: solid 8px #2B6B89;
+}
+.griffin-teen .pop-up-close {
+	background-color: #87348A;
+}
+.griffin-teen.pop-up a {
+	color: #2B6B89;
+}
+.griffin-teen.pop-up h2 {
+	color: #2B6B89;
+}
+.griffin-teen.pop-up h2 span {
+	color: #555;
+}
+.griffin-teen.pop-up #popup-submit,
+.griffin-teen.pop-up a.thankyou-close {
+	background-color: #87348A;
+	color: #f9f9f9;
+	text-align: center;
+}
+.griffin-teen.pop-up a.no-thanks {
+	color: #87348A;
+	border: solid 2px #87348A;
+}
+.griffin-teen.pop-up a.no-thanks:hover {
+	color: rgba(135,12,138,0.8);
+	border-color: rgba(135,12,138,0.8);
+}
+/* FIERCE READS TEEN */
+.fierce-reads.pop-up {
+	border: solid 8px #A91117;
+}
+.fierce-reads .pop-up-close {
+	background-color: #EC1C23;
+}
+.fierce-reads.pop-up a {
+	color: #A91117;
+}
+.fierce-reads.pop-up h2 {
+	color: #A91117;
+}
+.fierce-reads.pop-up h2 span {
+	color: #555;
+}
+.fierce-reads.pop-up #popup-submit,
+.fierce-reads.pop-up a.thankyou-close {
+	background-color: #EC1C23;
+	color: #f9f9f9;
+	text-align: center;
+}
+.fierce-reads.pop-up a.no-thanks {
+	color: #EC1C23;
+	border: solid 2px #EC1C23;
+}
+.fierce-reads.pop-up a.no-thanks:hover {
+	color: rgba(236,28,25,0.8)
+	border-color: rgba(236,28,25,0.8);
+}
+/* MEDIA QUERIES */
+@media screen and (min-width: 600px) {
+	.pop-up {
+		width: 75%;
+	}
+	.pop-up h2 {
+		font-size: 1.5em;
+	}
+	.pop-up p,
+	.pop-up span {
+		font-size: 1em;
+	}
+	.pop-up input,
+	.pop-up select {
+		text-indent: 10px;
+		font-size: 1em;
+	}
+	.pop-up label {
+		font-size: 0.6em;
+		margin-top: 5px;
+		margin-bottom: 15px;
+	}
+	.pop-up span {
+		font-size: 0.8em;
+	}
+	.pop-up #popup-submit,
+	.pop-up a.no-thanks,
+	.pop-up a.thankyou-close {
+		font-size: 1.1em;
+	}
+	.pop-up a.no-thanks {
+		margin-bottom: 25px;
+	}
+	.logo {
+		height: 30px;
+	}
+}
+@media screen and (min-width: 800px) {
+	.pop-up {
+		padding: 4% 0;
+	}
+	.pop-up a.no-thanks {
+		display: none;
+	}
+    .pop-up .img-container {
+		width: 32%;
+		float: left;
+		margin: 0 5% 0 5%;
+		display: block;
+	}
+	.pop-up .text-container {
+		float: right;
+		width: 52%;
+		padding: 0 5% 0 0;
+	}
+	.pop-up.thank-you .text-container {
+		width: 86%;
+		padding: 0 7%;
+	}
+}
+@media screen and (min-width: 1200px) {
+    .pop-up {
+    	width: 60%;
+    	max-width: 850px;
+    }
+}

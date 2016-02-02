@@ -16,6 +16,8 @@
 	display: none;
 	z-index: 1;
 	@include transitions(.5s);
+	background: url('../img/tech-pattern2.png') repeat;
+	background-size: 40%;
 }
 
 .slide.active {

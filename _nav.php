@@ -8,7 +8,7 @@
                 </li>
                 <li>
                 	<a class="fun-link" href="fun.php">
-                		fun
+                		just for fun
                 		<!-- <img src="img/fun.svg" alt="fun"> -->
                 	</a>
                 </li>

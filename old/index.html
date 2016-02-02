@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Nicole Kuprienko</title>
+		<link class="css_size" id="large" rel="stylesheet" type="text/css" href="css/main.css" />
+		<link class="css_size" id="small" rel="stylesheet" type="text/css" href="css/mobile.css" disabled />
+		<link rel="icon" href="favicon.gif" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script>
+
+//document ready
+$(document).ready(function() {
+	//load work page as default for content section
+	$("div#content").load("_work.html");
+	
+	//load content for nav links 
+	$("a#work").click(function() {
+		$("div#content").load("_work.html");
+	});
+	$("a#about").click(function() {
+		$("div#content").load("_about.html");
+	});
+    $("a#contact").click(function() {
+        $("div#content").load("_contact.html");
+    });                 
+		
+	//create function to check browser width and assign small or large size
+	
+	var size;
+	var checkWidth = function() {
+		var browserWidth = $(window).width();
+	    if (browserWidth < 701 || (screen.width <= 480 && window.orientation == 0)) {
+	        size = 'small';
+	    } else {
+	        size = 'large';
+	    }
+		return size;
+	};
+	
+	//call function to check browser width
+	checkWidth();
+	
+	//adjust css file based on browser width
+	var setSize = function(size) {
+	    $("link").each(function() {
+	        var $this = $(this);
+	        if ($this.attr('id') == size) {
+	            $this.prop('disabled', false);
+	        } else {
+	            $this.prop('disabled', true);  
+	        }
+	    });
+	};
+	
+	//call function to set size for css files
+	setSize(size);
+
+	//check width and select css file on window resize
+	var resizeHandler = function(){
+		checkWidth();
+		setSize(size);
+	};
+	
+	$(window).resize(resizeHandler);
+	
+	//check device orientation and select css 
+	$(window).on("orientationchange",function() {
+		if (window.orientation == 0) {
+			size = 'small';
+			$('#viewing').prop("content", "width=device-width");
+			
+		} else {
+			size = 'large';
+			$('#viewing').prop("content", "height=device-height");
+		}
+		setSize(size);
+		});
+
+});		
+
+	</script>	
+	<meta name="keywords" content="Nicole Kuprienko, Web Development, Portfolio" >
+	<meta name="author" content="Nicole Kuprienko" >
+	<meta name="description" content="Nicole Kuprienko, Web Development Portfolio" >
+	<meta name="viewport" id="viewing" content="width=device-width" >
+	</head>
+	<body>
+	<div id="wrapper">
+	<header>
+		<img src="images/webdev.png" id="webdev" alt="web development" />
+		<div class="clearfix"></div>
+		<nav>
+			<ul>
+				<li>
+                    <a href="#" id="work"><img src="images/work.png" /></a>
+				</li>
+				<li>
+                    <a href="#" id="about"><img src="images/about.png" /></a>
+				</li>
+				<li>
+                    <a href="#" id="contact"><img src="images/contact.png" /></a>
+				</li>
+				<li>
+                    <a href="https://www.linkedin.com/pub/nicole-kuprienko/60/4b7/395" target="_blank" id="linked_in"><img src="images/linked_in.png"  /></a>
+				</li>
+				<div class="clearfix"></div>
+			</ul>
+			
+		</nav>		
+	</header>
+	<div id="content"> <!--wrapper for content section-->
+	</div>
+	<footer>
+		<p>&copy; 2014 Nicole Kuprienko &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;&nbsp;contact: nicole.kuprienko@gmail.com</p>
+	</footer>		 
+	</div><!--close wrapper div-->
+	</body>
+</html>

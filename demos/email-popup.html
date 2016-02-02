@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heroes and Heartbreakers Pop-Up Demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700">
+	<link rel="stylesheet" type="text/css" href="css/pop-up.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/pop-up.js"></script>
+</head>
+<body>
+	<section class="pop-up heroes-heartbreakers">
+		<a href="#"><i class="fa fa-close pop-up-close"></i></a>
+		<div class="img-container" style="background-color: #fff; background: url('img/newsletter.png'); background-size: cover;"></div>
+		<div class="text-container">
+		<h2>Want more romance?<span>Get a weekly roundup of hot news, original stories, reviews, author spotlights, and more.</span></h2>
+			<form name="frmSubscribe" onsubmit="CheckPopupForm();" id="macsite" method="post" action="email-thankyou.html">
+				<input id="txtEmail" name="txtEmail" type="email" placeholder="ex. person@email.com" value="" class="" aria-required="true" aria-aria-labelledby="emailLabel">
+				<label id="emailLabel" for="txtEmail">*Email</label>
+				<div class="birthday-container">
+					<div class="birth-month">
+						<div class="background-select">
+							<select id="cboAgeMonth" name="cboAgeMonth" class="" aria-required="true" aria-labelledby="monthLabel">
+								<option selected="selected" value="0">- Select Month -</option>
+								<option value="1">January</option>
+								<option value="2">February</option>
+								<option value="3">March</option>
+								<option value="4">April</option>
+								<option value="5">May</option>
+								<option value="6">June</option>
+								<option value="7">July</option>
+								<option value="8">August</option>
+								<option value="9">September</option>
+								<option value="10">October</option>
+								<option value="11">November</option>
+								<option value="12">December</option>
+							</select>
+						</div><!-- close .background-select -->
+						<label id="monthLabel" for="cboAgeMonth">*Birth Month</label>
+					</div><!-- close .birth-month -->
+					<div class="birth-year">			
+						<input type="text" id="cboAgeYear" name="cboAgeYear" placeholder="ex. 1950" value="" class="" maxlength="4" aria-required="true" aria-labelledby="yearLabel"/>
+						<label id="yearLabel" for="cboAgeYear">*Birth Year</label>	
+					</div><!-- close .birth-year -->
+				</div><!-- close .birthday-container -->
+				<div class="clearfix"></div>
+				<span class="legalese">We collect birthdate to comply with the <a href="http://us.macmillan.com/privacy-notice#children" target="_blank">Children's Online Privacy Protection Act</a>. By signing up, you agree to receive e-mails from H&H, Macmillan, and its related companies.</span>
+				<button type="submit" id="popup-submit" >
+					<div class="submit-text">Sign Me Up!</div>
+					<div class="spinner display-none"><i class="fa fa-spinner"></i></div>
+				</button>
+				<a class="no-thanks" href="#">No Thanks</a>
+			</form>
+			<div class="footer-links">
+				<img class="logo" src="img/mac-logo-grey.png" alt="Macmillan Publishers" />
+			</div>
+		</div><!-- close .text-container -->
+		<div class="clearfix"></div>
+	</section>
+</body>
+</html>

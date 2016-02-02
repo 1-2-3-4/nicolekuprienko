@@ -1,16 +1,17 @@
 .contact-section {
 	padding-bottom: 100px;
+	max-width: 600px;
+	margin: 0 auto;
 }
 
 .contact-img-container {
 	float: left;
-	width: 40%;
 	border-radius: 50%;
 	background-color: #A9B4E9;
 	@include animations(colorChange 10s infinite);
 	img {
-		width: 55%;
-		padding: 30% 23%;
+		width: 150px;
+		padding: 75px 60px;
 	}
 }
 
@@ -29,7 +30,6 @@
 		a {
 			color: #6C83F5;
 			text-decoration: none;
-			@include animations(colorChangeText 10s infinite);
 		}
 		a:hover {
 			color: #fc7777;
