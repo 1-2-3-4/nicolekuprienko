@@ -87,10 +87,10 @@
             </section> -->
             <section class="project clearfix">
                 <h2>Championship Site - Twenty Sided Store</h2>
-                <div class="proj-img-container proj-championships"></div>
+                <div class="proj-img-container proj-championships" onclick="window.open('img/championships.pdf', '_blank');"></div>
                 <div class="proj-desc-container">
                     <p>Design for Championship Tournament site at Twenty Sided Store in Brooklyn.</p>
-                    <a class="view-proj" href="" target="_blank">View PDF</a>
+                    <a class="view-proj" href="img/championships.pdf" target="_blank">View PDF</a>
                     <span class="tag">Design</span>
                     <span class="tag">Illustrator</span>
                 </div>
