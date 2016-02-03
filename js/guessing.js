@@ -93,7 +93,7 @@ $( document ).ready(function() {
 		// computer picks a number from 1-100
 		computerNumber = randomNum();	
 		// print in console for hacks
-		console.log(computerNumber);
+		console.log('Guessing game hacks: ' + computerNumber);
 		// print initiate prompt
 		printComputerReply('I\'m thinking of a number between 1 &amp; 100', textIsYellow);
 		// focus on guess field - hide on portfolio site
