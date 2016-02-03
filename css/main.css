@@ -147,6 +147,9 @@ footer {
   min-height: 450px;
   overflow: hidden; }
 
+.slider:hover {
+  cursor: pointer; }
+
 .slide {
   text-align: center;
   padding: 50px;
