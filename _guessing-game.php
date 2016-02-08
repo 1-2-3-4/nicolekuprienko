@@ -4,5 +4,5 @@
 			<!-- this is where the user/computer chats will go -->
 			</div>
 		</div>
-		<input id="userGuess" type="number" placeholder="Guess!">
+		<input id="userGuess" type="text" placeholder="Guess!">
 	</div>

@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	//declare global variables
-	playerTurn = true;
+	var playerTurn = true;
 	var openBoxes;
 	var randomBox;
 	var allBoxes;
@@ -42,16 +42,22 @@ $(document).ready(function() {
 	
 	function computerWins() {
 		computerVictory++;
-		alert('Computer wins! Let\'s play again');
 		$('.computer-num-wins').html(computerVictory);
-		playAgain();
+		$('.computer-wins-msg').show();
+		$('.computer-wins-msg button').click(function() {
+			$('.computer-wins-msg').hide();
+			playAgain();
+		});
 	}
 
 	function playerWins() {
 		playerVictory++;
-		alert('Player wins! Let\'s play again');
 		$('.player-num-wins').html(playerVictory);
-		playAgain();
+		$('.player-wins-msg').show();
+		$('.player-wins-msg button').click(function() {
+			$('.player-wins-msg').hide();
+			playAgain();
+		});
 	}
 
 	function checkWin(mark, winningFunction) {

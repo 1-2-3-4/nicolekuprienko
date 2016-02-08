@@ -4,7 +4,6 @@ $( document ).ready(function() {
 	// var userReply = '';
 	var userWon = false;
 	var textIsYellow = true;
-	var ifNumber;
 	var computerNumber;
 	var randomEmoji;
 	var emojis = ['(و˃ᴗ˂)و', '＼（＾○＾）人（＾○＾）／', '(✿ ♥‿♥)', '\\(^-^)/', '٩( ´◡` )۶', '(つ◕౪◕)つ━☆ﾟ.*･｡ﾟ', '♪ヽ( ⌒o⌒)/', '(~˘▾˘)~'];
@@ -38,7 +37,7 @@ $( document ).ready(function() {
 	}	
 
 	function checkMyNum(guessNum) {
-		ifNumber = $.isNumeric(userNumber);
+		var ifNumber = $.isNumeric(userNumber);
 		if (ifNumber === false) {
 			printComputerReply(doesNotCompute[sadface], textIsYellow);
 			scrollDown();
@@ -46,7 +45,8 @@ $( document ).ready(function() {
 			if (sadface === doesNotCompute.length) {
 				sadface = 0;
 			}
-			return userWon = false;
+			userWon = false;
+			return;
 		}
 		else {
 			if (computerNumber < userNumber) {
@@ -75,9 +75,6 @@ $( document ).ready(function() {
 			//wait a minute before initiating new game
 			setTimeout(initiateGuessing, 1350);
 			return textIsYellow;
-		}
-		else {
-			//do nothing
 		}
 	}
 
